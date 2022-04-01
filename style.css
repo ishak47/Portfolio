@@ -99,7 +99,12 @@ h1{
     left: 0;
 }
 
+/*responsive voor header & navbar*/
 @media (max-width: 900px) {
+
+    body#menuButtonopen{
+        overflow-y: hidden;
+    }
 
     /*nav link list items*/
     .nav-links ul li {
@@ -144,7 +149,6 @@ h1{
     }
 
     #menuButtonOpen {
-        color: #000563;
         margin: 7vh;
         text-decoration: none;
         font-size: 25px;

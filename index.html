@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
+<!--header en navbar-->
 <div class="nav-links" id="navLinks">
     <a href="javascript:void(0);" id="menuButtonOpen" class="menuButton" onclick="hideMenu()">&#10006;</a>
     <header>
@@ -40,11 +41,11 @@
 <div>
     <a href="javascript:void(0);" id="menuButtonClosed" onclick="showMenu()">&#9776;</a>
 </div>
+
 <section id="Home">
 
-
     <div id="grid-container">
-        <h1> Ishak Jmilou</h1>
+        <h1 id="homeTitle"> Ishak <br> Jmilou</h1>
     </div>
 </section>
 <section id="AboutMe"></section>
@@ -74,17 +75,7 @@
         lis[i].addEventListener("click", hideMenu);
     }
 
-    let body = document.getElementsByTagName('body')[0],
-        sidebar = document.getElementById('navLinks');
 
-    // sidebar overflow hide
-    sidebar.onmouseover = function() {
-        body.style.overflow = 'hidden';
-    }
-
-    sidebar.onmouseout = function() {
-        body.style.overflow = 'auto';
-    }
 </script>
 </body>
 </html>
