@@ -159,20 +159,6 @@ a {
     background-color: #212934;
 }
 
-/*!*onder gemiddelde telefoon*!*/
-/*@media (max-width: 380px) {*/
-/*    .homeImg{*/
-/*        width: 300px;*/
-/*    }*/
-/*    .wrapper{*/
-/*        grid-template: auto/ minmax(0,1fr);*/
-/*    }*/
-
-/*    #homeTitle{*/
-/*        grid-column-start: 2 !important;*/
-/*    }*/
-/*}*/
-
 /*mobile/ tablet*/
 @media (max-width: 700px) {
     .wrapper {
@@ -468,4 +454,50 @@ a {
     /*    !*margin-top: 20px;*!*/
     /*    margin-left: 50px !important;*/
     /*}*/
+}
+
+
+
+
+.bornText , .experienceColored, .birthColoured{
+    color: #FF4A57;
+}
+
+.bornCity{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.experience{
+    text-align: center;
+    margin: 0 20px;
+}
+
+.birthDate{
+    text-align: end;
+    margin-left: auto;
+    margin-right: auto;
+}
+.city, .years, .Date{
+    color: white;
+}
+
+.textAbout{
+    display: grid;
+    grid-template: auto/ minmax(0,1fr) minmax(0,1fr) minmax(0,1fr);
+    justify-content: center;
+    margin: 7% 20px 0 20px;
+}
+
+@media (max-width: 400px) {
+    .textAbout{
+        display: grid;
+        place-content: center;
+        grid-template: auto / minmax(0,1fr);
+        text-align: center;
+    }
+
+    .birthDate{
+        text-align: center;
+    }
 }
