@@ -446,18 +446,7 @@ a {
         width: 0;
         height: 0;
     }
-
-    /*.wrapper {*/
-    /*    display: grid;*/
-    /*    grid-template: auto /minmax(0, 1fr) minmax(0, 1fr);*/
-    /*    !*grid-template-columns: auto auto 180px auto;*!*/
-    /*    !*margin-top: 20px;*!*/
-    /*    margin-left: 50px !important;*/
-    /*}*/
 }
-
-
-
 
 .bornText , .experienceColored, .birthColoured{
     color: #FF4A57;
@@ -482,15 +471,19 @@ a {
     color: white;
 }
 
-.textAbout{
+.information {
     display: grid;
-    grid-template: auto/ minmax(0,1fr) minmax(0,1fr) minmax(0,1fr);
+    grid-template: auto/ minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
     justify-content: center;
     margin: 7% 20px 0 20px;
 }
 
-@media (max-width: 400px) {
-    .textAbout{
+.test{
+    height: 400px;
+    margin-bottom: auto;
+}
+@media (max-width: 450px) {
+    .information{
         display: grid;
         place-content: center;
         grid-template: auto / minmax(0,1fr);
@@ -500,4 +493,60 @@ a {
     .birthDate{
         text-align: center;
     }
+}
+
+@media (max-width: 1150px) {
+    .aboutCenter{
+        display: grid;
+        grid-template: auto / minmax(0,1fr) !important;
+        margin-top: 0 !important;
+    }
+    .aboutMeIMG{
+        grid-row: span 1 !important;
+
+        width: 450px;
+        height: 350px;
+    }
+
+    .test{
+        margin-left: 10px;
+        height: auto;
+    }
+}
+
+@media (max-width: 500px) {
+    .aboutMeIMG{
+        width: 370px;
+        height: 270px;
+        margin-bottom: 19px;
+    }
+
+    #aboutMe{
+        height: auto;
+    }
+    .test{
+        margin-left: 8px;
+        height: auto;
+    }
+
+    .title{
+        font-size: 70px !important;
+    }
+
+    .aboutMeText{
+        font-size: 18px !important;
+    }
+
+    br{
+        display: none;
+    }
+}
+
+@media (max-width: 390px){
+    .aboutMeIMG{
+        width: 330px;
+        height: 230px;
+    }
+
+
 }

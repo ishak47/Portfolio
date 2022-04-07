@@ -9,6 +9,33 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap" rel="stylesheet">
     <style>
 
+        .aboutWrapper{
+            display: grid;
+            grid-template: auto/ minmax(0,1fr);
+        }
+
+        .aboutCenter{
+            color: white;
+            display: grid;
+            grid-template: auto / minmax(0,1fr) minmax(0,1fr);
+            place-items: center;
+            margin-top: 3%;
+        }
+
+        .title{
+            font-size: 100px;
+            overflow-y: hidden;
+            margin: 0 ;
+        }
+
+        .aboutMeText{
+            font-size: 25px;
+        }
+
+        .aboutMeIMG{
+            grid-row: span 2;
+        }
+
     </style>
 </head>
 <body>
@@ -44,10 +71,11 @@
     <a href="javascript:void(0);" id="menuButtonClosed" onclick="showMenu()">&#9776;</a>
 </div>
 
+<!--Section Homepage-->
 <section id="Home">
     <div class="wrapper">
         <h1 class="" id="homeTitle"> Ishak <br> Jmilou</h1>
-        <img class="homeImg" src="IMG/homeImage.v1%20(1).png">
+        <img class="homeImg" src="IMG/Home/homeImage.v1%20(1).png">
         <div id="lineHome"></div>
         <div class="introductionText">
             <p class="text">Ik ben een software<br>
@@ -56,22 +84,24 @@
             </p>
             <div class="mediaWrapper">
                 <a href="https://github.com/ishak47">
-                    <img class="mediaLink" src="IMG/GitHub.png" width="50" height="50">
+                    <img class="mediaLink" src="IMG/Home/GitHub.png" width="50" height="50">
                 </a>
                 <a href="https://www.linkedin.com/in/ishak-jmilou-1a84a2227/">
-                    <img class="mediaLink" src="IMG/linkedIN.png" width="50" height="50">
+                    <img class="mediaLink" src="IMG/Home/linkedIN.png" width="50" height="50">
                 </a>
                 <a href="mailto:ishakjmilou.11@gmail.com">
-                    <img class="mediaLink" src="IMG/mail%20change%20color.png" width="50" height="50">
+                    <img class="mediaLink" src="IMG/Home/mail%20change%20color.png" width="50" height="50">
                 </a>
             </div>
         </div>
     </div>
 
 </section>
+
+<!--section About me-->
 <section id="aboutMe">
     <div class="aboutWrapper">
-        <div class="textAbout">
+        <div class="information">
             <div class="bornCity ">
                 <p class="bornText">Born in <br><span class="city">Amsterdam</span> </p>
             </div>
@@ -82,9 +112,21 @@
                 <p class="birthColoured">Date of birth <br><span class="Date">07 oktober 2004</span> </p>
             </div>
         </div>
-    </div>
+        <div class="aboutCenter">
+            <div class="test">
+                <div  class="title">About me</div>
+                <p class="aboutMeText">
+                    Mijn naam is Ishak Jmilou. Ik studeer de opleiding<br> Software Developer aan het ROC van Flevoland.<br>
+                    Ik ben 17 jaar en zit in mijn 2de leerjaar op het ROC.<br> Ik heb tot nu toe verschillende cursussen op school<br>
+                    gehad. Mijn hobby's zijn gamen , voetbal, Formule 1 en<br> alle andere soorten sporten die er zijn.
+                </p>
+            </div>
+            <img alt="imageAbout me page" class="aboutMeIMG" src="IMG/About%20me/portfolioAboutme.jpg" width="500" height="400">
 
+        </div>
+    </div>
 </section>
+
 <section id="Skills"></section>
 <section id="Projects"><p>effe testen of het werkt</p></section>
 <section id="Contact"></section>
