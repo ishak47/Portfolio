@@ -165,17 +165,15 @@ a {
         display: grid;
         grid-template: auto /minmax(0, 1fr) !important;
         margin-top: auto;
-        margin-left: 0 !important;
+        margin-left: 13px !important;
     }
 
     #homeTitle {
         font-size: 80px;
-        margin-left: 8px;
         line-height: 1;
     }
 
     .homeImg {
-        margin-left: 13px;
         width: 293px;
         grid-row-start: 3 !important;
     }
@@ -194,7 +192,6 @@ a {
     .introductionText{
         grid-row-start: 2 ;
         grid-column-start: 1;
-        margin-left: 13px;
         text-align: left ;
     }
 
@@ -329,7 +326,6 @@ a {
         border-radius: 25px;
         font-size: 24px;
         transition: all 0.5s ease-out;
-        color: #000563;
     }
 
     .listItem {
@@ -346,7 +342,7 @@ a {
     .wrapper {
         display: grid;
         grid-template: auto /minmax(0, 1fr) minmax(0, 1fr);
-        margin-left: 0 !important;
+        margin-left: 0;
     }
 
     .homeImg{
@@ -387,7 +383,6 @@ a {
     .wrapper {
         display: grid;
         grid-template: auto /minmax(0, 1fr) minmax(0,1fr) minmax(0,1fr) minmax(0,1fr);
-        /*grid-template-columns: auto auto 8rem auto;*/
         margin-top: auto;
         margin-left: 1px !important;
         text-align: center;
@@ -448,6 +443,7 @@ a {
     }
 }
 
+/*About me page*/
 .bornText , .experienceColored, .birthColoured{
     color: #FF4A57;
 }
@@ -478,9 +474,36 @@ a {
     margin: 7% 20px 0 20px;
 }
 
-.test{
-    height: 400px;
+.centerText{
+    height: 453px;
     margin-bottom: auto;
+}
+
+.aboutWrapper{
+    display: grid;
+    grid-template: auto/ minmax(0,1fr);
+}
+
+.aboutCenter{
+    color: white;
+    display: grid;
+    grid-template: auto / minmax(0,1fr) minmax(0,1fr);
+    place-items: center;
+    margin-top: 3%;
+}
+
+.title{
+    font-size: 100px;
+    overflow-y: hidden;
+    margin: 0 ;
+}
+
+.aboutMeText{
+    font-size: 25px;
+}
+
+.aboutMeIMG{
+    grid-row: span 2;
 }
 @media (max-width: 450px) {
     .information{
@@ -503,18 +526,21 @@ a {
     }
     .aboutMeIMG{
         grid-row: span 1 !important;
-
         width: 450px;
         height: 350px;
     }
 
-    .test{
+    .centerText{
         margin-left: 10px;
         height: auto;
     }
 }
 
 @media (max-width: 500px) {
+
+    .aboutWrapper{
+        margin: 0 20px;
+    }
     .aboutMeIMG{
         width: 370px;
         height: 270px;
@@ -547,6 +573,32 @@ a {
         width: 330px;
         height: 230px;
     }
+}
 
+@media (max-width: 1150px) {
+    #skillsWrapper{
+        display: grid;
+        grid-template: auto / minmax(0,1fr) !important;
+        margin-top: 0 !important;
+    }
 
+    .centerText{
+        margin-left: 10px;
+        height: auto;
+    }
+
+    .SkillsTest{
+        grid-row-start:1 ;
+    }
+
+    #images{
+        grid-row-start: 2;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 500px){
+    #skillsWrapper{
+        margin: 0 20px;
+    }
 }
