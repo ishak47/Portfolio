@@ -634,18 +634,6 @@ a {
 }
 
 /*Projects section*/
-button {
-    border: none;
-    background-color: #FF4A57;
-    border-radius: 13px;
-    color: white;
-    padding: 8px;
-    width: 130px;
-    margin-top: auto;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-}
-
 #Projects{
     height: auto;
 }
@@ -724,5 +712,20 @@ button {
 @media (max-width: 710px) {
     .projectsIMG{
         grid-template-columns: repeat(1, 350px);
+    }
+}
+
+@media (max-width: 580px) {
+
+    .formName{
+        display: block !important;
+    }
+
+    .col-3{
+        width: 100% !important;
+    }
+
+    .container{
+        width: 90% !important;
     }
 }
