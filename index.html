@@ -9,13 +9,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap" rel="stylesheet">
     <style>
 
-        .formName {
-            display: flex;
-            justify-content: space-between;
+        form{
+            background-color: gray;
         }
 
         .form-control {
             margin-top: 30px;
+            border-radius: 13px;
         }
 
         button {
@@ -42,11 +42,19 @@
             margin-top: 20px;
         }
 
-        .form-button{
+        .form-button {
             display: flex;
             justify-content: center;
+            margin-bottom: 15px;
         }
 
+        #Contact {
+            height: auto;
+        }
+
+        .col-3{
+            width: 100%;
+        }
     </style>
 </head>
 <body>
@@ -78,6 +86,8 @@
         </div>
     </header>
 </div>
+
+<!--button voor navabr-->
 <div>
     <a href="javascript:void(0);" id="menuButtonClosed" onclick="showMenu()">&#9776;</a>
 </div>
@@ -86,8 +96,8 @@
 <section id="Home">
     <div class="wrapper">
         <h1 class="" id="homeTitle"> Ishak <br> Jmilou</h1>
-        <img class="homeImg" src="IMG/Home/homeImage.v1%20(1).png">
-        <div id="lineHome"></div>
+        <img class="homeImg" src="IMG/Home/Ishak-3.png">
+<!--        <div id="lineHome"></div>-->
         <div class="introductionText">
             <p class="text">Ik ben een software<br>
                 developer in opleiding op<br>
@@ -271,13 +281,14 @@
             <input type="hidden" name="_template" value="table">
             <input type="hidden" name="_captcha" value="false">
             <div class="form-group">
-                <div class="form-row formName">
                     <div class="col-3">
                         <input type="text" name="name" class="form-control" placeholder="Full Name" required>
                     </div>
                     <div class="col-3">
-                        <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+                        <input type="number" name="number" class="form-control" placeholder="phoneNumber" required>
                     </div>
+                <div class="col-3">
+                    <input type="email" name="email" class="form-control" placeholder="Email Address" required>
                 </div>
             </div>
             <div class="form-group">
@@ -290,6 +301,23 @@
     </div>
 </section>
 
+<!--section footer-->
+<section id="footer">
+    <footer>
+        <div class="mediaWrapper">
+            <a href="https://github.com/ishak47">
+                <img class="mediaLink" src="IMG/Home/GitHub.png" width="50" height="50">
+            </a>
+            <a href="https://www.linkedin.com/in/ishak-jmilou-1a84a2227/">
+                <img class="mediaLink" src="IMG/Home/linkedIN.png" width="50" height="50">
+            </a>
+            <a href="mailto:ishakjmilou.11@gmail.com">
+                <img class="mediaLink" src="IMG/Home/mail%20change%20color.png" width="50" height="50">
+            </a>
+        </div>
+        <h2>Copyright &copy;2022 Ishak Jmilou</h2>
+    </footer>
+</section>
 <script>
     let navLinks = document.getElementById("navLinks");
 
