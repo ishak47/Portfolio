@@ -9,15 +9,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap" rel="stylesheet">
     <style>
 
-        form{
-            background-color: gray;
-        }
-
-        .form-control {
-            margin-top: 30px;
-            border-radius: 13px;
-        }
-
         button {
             border: none;
             background-color: #FF4A57;
@@ -30,31 +21,102 @@
             font-size: 16px;
         }
 
-        .container {
-            width: 720px;
-        }
-
-        .contactTitle {
-            text-align: center;
-        }
-
-        .submitButton {
-            margin-top: 20px;
-        }
-
-        .form-button {
+        .container{
+            position: relative;
+            width: 100%;
+            height: 100%;
             display: flex;
             justify-content: center;
-            margin-bottom: 15px;
+            align-items: center;
+            padding: 20px 100px;
         }
 
-        #Contact {
-            height: auto;
+        .contact-box{
+            max-width: 850px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: #fff;
+            box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
         }
 
-        .col-3{
+        .left{
+            background: url("IMG/Contact/bg.jpg") no-repeat center;
+            background-size: cover;
+            height: 100%;
+        }
+
+        .right{
+            padding: 25px 40px;
+        }
+
+        h2{
+            position: relative;
+            padding: 0 0 10px;
+            margin-bottom: 10px;
+        }
+
+        h2:after{
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+            height: 4px;
+            width: 50px;
+            border-radius: 2px;
+            background-color: #FF4A57;
+        }
+
+        .field{
             width: 100%;
+            border: 2px solid rgba(0, 0, 0, 0);
+            outline: none;
+            background-color: rgba(230, 230, 230, 0.6);
+            padding: 0.5rem 1rem;
+            font-size: 1.1rem;
+            margin-bottom: 22px;
+            transition: .3s;
         }
+
+        .field:hover{
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+
+        textarea{
+            min-height: 150px;
+        }
+
+        .btn{
+            background-color: #FF4A57;
+            width: 100%;
+            padding: 0.5rem 1rem;
+            color: #fff;
+            font-size: 1.1rem;
+            border: none;
+            outline: none;
+            transition: .3s;
+        }
+
+        .btn:hover{
+            background-color: #FF4A57;
+        }
+
+        .field:focus{
+            border: 2px solid #FF4A57;
+            background-color: #fff;
+        }
+
+@media screen and (max-width: 880px){
+    .contact-box{
+        grid-template-columns: 1fr;
+    }
+    .left{
+        height: 200px;
+    }
+}
     </style>
 </head>
 <body>
@@ -274,30 +336,22 @@
 
 <!--section Contact-->
 <section id="Contact">
-
     <div class="container">
-        <div class="title contactTitle">Contact</div>
-        <form target="_blank" action="https://formsubmit.co/ishakjmilou.11@gmail.com" method="POST">
-            <input type="hidden" name="_template" value="table">
-            <input type="hidden" name="_captcha" value="false">
-            <div class="form-group">
-                    <div class="col-3">
-                        <input type="text" name="name" class="form-control" placeholder="Full Name" required>
-                    </div>
-                    <div class="col-3">
-                        <input type="number" name="number" class="form-control" placeholder="phoneNumber" required>
-                    </div>
-                <div class="col-3">
-                    <input type="email" name="email" class="form-control" placeholder="Email Address" required>
-                </div>
+        <div class="contact-box">
+            <div class="left"></div>
+            <div class="right">
+                <h2>Contact Us</h2>
+                <form target="_blank" action="https://formsubmit.co/ishakjmilou.11@gmail.com" method="POST">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_captcha" value="false">
+                            <input type="text" name="name" class="field" placeholder="Full Name *" required>
+                            <input type="number" name="number" class="field" placeholder="phoneNumber *" required>
+                            <input type="email" name="email" class="field" placeholder="Email Address *" required>
+                        <textarea placeholder="Your Message *" class="field " name="message" rows="10" required></textarea>
+                        <button type="submit" class="btn ">Submit Form</button>
+                </form>
             </div>
-            <div class="form-group">
-                <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
-            </div>
-            <div class="form-button">
-                <button type="submit" class="submitButton ">Submit Form</button>
-            </div>
-        </form>
+        </div>
     </div>
 </section>
 

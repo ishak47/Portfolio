@@ -65,10 +65,9 @@ li {
     list-style: none;
 }
 
-#menu li a:hover {
-    text-decoration: underline #FF4A57 7px;
-
-}
+ #menu li a:hover {
+    text-decoration: underline #FF4A57 7px !important;
+ }
 
 /*hide icon in desktop*/
 #menuButtonClosed, #menuButtonOpen {
@@ -80,12 +79,14 @@ li {
 section {
     width: 100%;
     height: auto;
+    padding-bottom: 30px;
 }
 
 /*Home section*/
 #Home {
     display: flex;
     background-color: #212934;
+    padding-bottom: 0;
 }
 
 /*portretfoto homepage*/
@@ -547,7 +548,7 @@ footer{
 /*projects page*/
 @media (max-width: 710px) {
     .projectsIMG{
-        grid-template-columns: repeat(1, 350px);
+        grid-template-columns: repeat(1, 350px)!important;
     }
 }
 
