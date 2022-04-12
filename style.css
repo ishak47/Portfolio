@@ -15,8 +15,10 @@ ul {
     display: flex;
     align-items: center;
     justify-content: right;
-    width: 95%;
-    background-color: transparent;
+    width: 100%;
+    background-color: transparent !important;
+    /*height: 50px;*/
+    z-index: 99;
 }
 
 /*nav link list items*/
@@ -41,9 +43,8 @@ li.navbar a {
 
 /*header*/
 ul {
-    padding: 10px;
+    /*padding: 10px;*/
     position: absolute;
-    right: 0;
     top: 0;
     margin-right: 5vh;
 }
@@ -51,7 +52,7 @@ ul {
 li {
     list-style: none;
     display: inline-block;
-    margin: 0 20px 20px 20px;
+    margin: 0 20px 0 20px;
 }
 
 #menu ul {
@@ -68,6 +69,14 @@ li {
  #menu li a:hover {
     text-decoration: underline #FF4A57 7px !important;
  }
+
+ul.scrolled{
+    background-color: white !important;
+}
+
+#menu li a.scrolled{
+    color: black;
+}
 
 /*hide icon in desktop*/
 #menuButtonClosed, #menuButtonOpen {
@@ -298,9 +307,100 @@ a {
     transform: translateY(0px);
 }
 
+/*Contact page*/
 #Contact{
     background-color: #212934;
 }
+
+.container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 100px;
+}
+
+.contact-box{
+    max-width: 850px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+}
+
+.left{
+    background: url("IMG/Contact/bg.jpg") no-repeat center;
+    background-size: cover;
+    height: 100%;
+}
+
+.right{
+    padding: 25px 40px;
+}
+
+.ContactTitle{
+    position: relative;
+    padding: 0 0 10px;
+    margin-bottom: 10px;
+}
+
+.ContactTitle:after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color: #FF4A57;
+}
+
+.field{
+    width: 100%;
+    border: 2px solid rgba(0, 0, 0, 0);
+    outline: none;
+    background-color: rgba(230, 230, 230, 0.6);
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    margin-bottom: 22px;
+    transition: .3s;
+    border-radius: 13px;
+}
+
+.field:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+textarea{
+    min-height: 150px;
+}
+
+.btn{
+    background-color: #FF4A57;
+    width: 100% !important;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    font-size: 1.1rem;
+    border: none;
+    outline: none;
+    transition: .3s;
+}
+
+.btn:hover{
+    background-color: #FF4A57;
+}
+
+.field:focus{
+    border: 2px solid #FF4A57;
+    background-color: #fff;
+}
+
 
 /*footer*/
 footer{
@@ -313,7 +413,10 @@ footer{
     color: white;
     text-align: center;
     overflow: hidden;
+}
 
+h2{
+    overflow: hidden;
 }
 
 
@@ -364,6 +467,7 @@ footer{
         top: 0;
         transition: all 1s ease-out;
         background-color: transparent;
+        z-index: 99;
     }
 
     #menuButtonOpen {
@@ -573,6 +677,14 @@ footer{
         width: 90% !important;
     }
 }
+@media (max-width: 880px){
+    .contact-box{
+        grid-template-columns: 1fr;
+    }
+    .left{
+        height: 200px;
+    }
+}
 
 /*About me page*/
 @media (max-width: 390px){
@@ -676,4 +788,9 @@ footer{
     #skillsWrapper{
         margin: 0 20px;
     }
+
+    #images{
+        grid-column-gap: 0 ;
+    }
 }
+
