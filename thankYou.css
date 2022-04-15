@@ -1,0 +1,60 @@
+* {
+    background-color: #212934;
+    color: white;
+    font-family: 'Roboto', sans-serif !important;
+}
+
+.wrapperGif {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.GIF{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#text{
+    place-content: center;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.btnGIF {
+    text-decoration: none;
+    background-color: #FF4A57;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 13px;
+}
+
+a{
+    text-decoration: none;
+    background-color: transparent;
+}
+
+a:hover{
+    color: black;
+}
+
+@media(max-width: 800px){
+    .GIF {
+        width: 250px !important;
+        height: 250px !important;
+    }
+
+    #text{
+        font-size: 20px;
+    }
+    .btnGIF{
+        height: 40px;
+        width: 100%;
+        font-size: 20px;
+        padding: 0;
+    }
+}

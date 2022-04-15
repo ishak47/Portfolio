@@ -2,12 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+<!--    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />-->
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Developer - Ishak Jmilou</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="IMG/Home/favicon-32x32.png">
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <style>
         .btnProjects {
             border: none;
@@ -25,25 +29,12 @@
             color: black;
         }
 
-        .projectsText{
-            color: white;
-            font-size: 25px;
-        }
-
-        #Projects{
-            place-items: center;
-        }
-
-        .projectsLeft{
-            height: 525px;
-        }
-
     </style>
 </head>
 <body>
 <!--header en navbar-->
 <div class="nav-links" id="navLinks">
-    <a href="javascript:void(0);" id="menuButtonOpen" class="menuButton" onclick="hideMenu()">&#9886;</a>
+    <a href="javascript:void(0);" id="menuButtonOpen" class="menuButton" onclick="hideMenu()"><img src="IMG/navbar/menu_open_black_48dp.svg"></a>
     <header>
         <div id="menu">
             <nav class="nav">
@@ -66,7 +57,6 @@
                     <li class="navbar">
                         <a href="#Contact" class="navItem">Contact</a>
                     </li>
-<!--                    <img class="favicon" src="IMG/Home/favicon-32x32.png">-->
                 </ul>
             </nav>
         </div>
@@ -75,7 +65,7 @@
 
 <!--button voor navabr-->
 <div>
-    <a href="javascript:void(0);" id="menuButtonClosed" onclick="showMenu()">&#9776;</a>
+    <a href="javascript:void(0);" id="menuButtonClosed" onclick="showMenu()"><img src="IMG/navbar/outline_menu_white_48dp.png"></a>
 </div>
 
 <!--Section Homepage-->
@@ -86,6 +76,7 @@
         <div class="introductionText">
             <p class="text"> Software
                 developer in opleiding op<br>
+                <i class="bi bi-list"></i>
                 het ROC van Flevoland
             </p>
             <div class="mediaWrapper">
@@ -148,7 +139,7 @@
             <div class="title">Skills</div>
             <p class="aboutMeText">
                 Ik ben voornamelijk goed in het front-end aangezien ik<br>daar tot nu toe het meest van heb geleerd.
-                Mijn <br>JavaScript skills zijn nog niet zo goed als mijn HTML &<br>CSS maar daar ben ik mee bezig.
+                Mijn <br>JavaScript skills zijn nog niet zo goed als mijn HTML &<br> CSS maar daar ben ik mee bezig.
                 Verder hebben we op <br>school uitleg gekregen hoe we GitHub en GitKraken <br>moeten gebruiken en
                 Office365 kan ik ook redelijk <br>goed gebruiken.
             </p>
@@ -161,10 +152,10 @@
 <section id="Projects">
     <div class="projectsLeft">
         <div class="title projectsTitle">Projects</div>
-        <p class="projectsText">                    Mijn naam is Ishak Jmilou. Ik studeer de opleiding<br> Software Developer aan het ROC van Flevoland.<br>
-            Ik ben 17 jaar en zit in mijn 2de leerjaar op het ROC.<br> Ik heb tot nu toe verschillende cursussen
-            op school<br>
-            gehad. Mijn hobby's zijn gamen , voetbal, Formule 1 en<br> alle andere soorten sporten die er zijn.</p>
+        <p class="projectsText">Dit zijn een aantal projecten die ik heb gemaakt. Dit zijn<br> opdrachten die ik op school heb gemaakt.
+             Ik heb tijdens mijn<br> verschillende opdrachten gemaakt waarin ik kennis heb <br>gemaakt met HTML, CSS, JavaScript, en PHP.
+             Ik heb met mijn <br>vaardigheden in een groep een stage opdracht gemaakt<br> waarin ik gewerkt heb met HTML, CSS en JavaScript.
+        </p>
     </div>
     <div id="projectsWrapper">
         <div class="projectsIMG">
@@ -175,10 +166,10 @@
                     <div class="program overlayTitle subTitle">HTML/CSS/JS/PHP</div>
                     <div class="buttons">
                         <a href="https://bit-workboard.000webhostapp.com/">
-                            <button class=" btnProjects">LIVE</button>
+                            <button class=" btnProjects">Live</button>
                         </a>
                         <a href="https://github.com/ishak47/BitAcademy">
-                            <button class=" btnProjects">REPO</button>
+                            <button class=" btnProjects">Repo</button>
                         </a>
                     </div>
                 </div>
@@ -190,10 +181,10 @@
                     <div class="program overlayTitle">HTML/CSS/JS</div>
                     <div class="buttons">
                         <a href="https://memorygame-javascript.netlify.app/">
-                            <button class=" btnProjects">LIVE</button>
+                            <button class=" btnProjects">Live</button>
                         </a>
                         <a href="https://github.com/ishak47/JavaScript/tree/master/MemoryGame">
-                            <button class=" btnProjects">REPO</button>
+                            <button class=" btnProjects">Repo</button>
                         </a>
                     </div>
                 </div>
@@ -205,10 +196,10 @@
                     <div class="program overlayTitle">HTML/CSS/JS</div>
                     <div class="buttons">
                         <a href="https://h5-javascript.netlify.app/">
-                            <button class=" btnProjects">LIVE</button>
+                            <button class=" btnProjects">Live</button>
                         </a>
                         <a href="https://github.com/ishak47/JavaScript/tree/master/H05">
-                            <button class=" btnProjects">REPO</button>
+                            <button class=" btnProjects">Repo</button>
                         </a>
                     </div>
                 </div>
@@ -220,10 +211,10 @@
                     <div class="program overlayTitle">HTML/CSS</div>
                     <div class="buttons">
                         <a href="https://true-music-h07.netlify.app/">
-                            <button class=" btnProjects">LIVE</button>
+                            <button class=" btnProjects">Live</button>
                         </a>
                         <a href="https://github.com/ishak47/html-css/tree/master/H07">
-                            <button class=" btnProjects">REPO</button>
+                            <button class=" btnProjects">Repo</button>
                         </a>
                     </div>
                 </div>
@@ -235,10 +226,10 @@
                     <div class="program overlayTitle">HTML/CSS/JS</div>
                     <div class="buttons">
                         <a href="https://voetbal-logo-ho5-js.netlify.app/">
-                            <button class=" btnProjects">LIVE</button>
+                            <button class=" btnProjects">Live</button>
                         </a>
                         <a href="https://github.com/ishak47/JavaScript/tree/master/H03">
-                            <button class=" btnProjects">REPO</button>
+                            <button class=" btnProjects">Repo</button>
                         </a>
                     </div>
                 </div>
@@ -250,10 +241,10 @@
                     <div class="program overlayTitle">HTML/CSS</div>
                     <div class="buttons">
                         <a href="https://burton-education-h06.netlify.app/">
-                            <button class=" btnProjects">LIVE</button>
+                            <button class=" btnProjects">Live</button>
                         </a>
                         <a href="https://github.com/ishak47/JavaScript/tree/master/H04/H04.3">
-                            <button class=" btnProjects">REPO</button>
+                            <button class=" btnProjects">Repo</button>
                         </a>
                     </div>
                 </div>
@@ -273,10 +264,12 @@
                     <input type="hidden" name="_next" value="https://ishakjmilou.nl/">
                     <input type="hidden" name="_template" value="table">
                     <input type="hidden" name="_captcha" value="false">
+                    <input type="text" name="_honey" style="display:none">
                     <input type="text" name="name" class="field" placeholder="Full Name *" required>
                     <input type="text" name="number" class="field" placeholder="Phone Number *" required>
                     <input type="email" name="email" class="field" placeholder="Email Address *" required>
                     <textarea placeholder="Your Message *" class="field " name="message" rows="10" required></textarea>
+                    <input type="hidden" name="_next" value="https://ishakjmilou.nl/thankYou.html">
                     <button type="submit" class="btn btnProjects ">Submit Form</button>
                 </form>
             </div>

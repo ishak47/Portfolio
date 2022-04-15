@@ -4,11 +4,7 @@ html {
 
 * {
     overflow-x: hidden;
-}
-
-.scrolled .favicon{
-    display: block !important;
-    background-color: deeppink;
+    font-family: 'Roboto', sans-serif !important;
 }
 
 /*Start header*/
@@ -63,7 +59,7 @@ li {
 
 .navItem {
     color: white;
-    font-size: 20px !important;
+    font-size: 16px !important;
     text-decoration: none;
     list-style: none;
 }
@@ -121,11 +117,12 @@ section {
     color: white;
     font-family: 'Roboto', sans-serif;
     left: 80px;
-    font-size: 204px;
+    font-size: 156px;
     width: auto;
     margin-top: auto;
     margin-bottom: auto;
     overflow: hidden;
+    line-height: 1;
 }
 
 /*grid wrapper*/
@@ -133,7 +130,7 @@ section {
     display: grid;
     grid-template-columns: auto auto  auto;
     margin-top: auto;
-    margin-left: 30px !important;
+    margin-left: 75px !important;
     width: 100%;
 }
 
@@ -165,6 +162,7 @@ a {
 
 .bornText , .experienceColored, .birthColoured{
     color: #FF4A57;
+    font-weight: bold;
 }
 
 .bornCity{
@@ -212,14 +210,14 @@ a {
 }
 
 .title{
-    font-size: 100px;
+    font-size: 75px;
     overflow-y: hidden;
     margin: 0 ;
     color: white;
 }
 
 .aboutMeText{
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .aboutMeIMG{
@@ -280,6 +278,19 @@ a {
 .program{
     font-size: 18px;
 
+}
+
+.projectsText{
+    color: white;
+    font-size: 20px;
+}
+
+#Projects{
+    place-items: center;
+}
+
+.projectsLeft{
+    height: 525px;
 }
 
 .overlay {
@@ -468,7 +479,7 @@ h3{
         z-index: 2;
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
-        transition: linear 0.8s;
+        transition: linear 0.3s;
     }
 
     /*start nav bar opening*/
@@ -670,7 +681,7 @@ h3{
 
 @media (min-width: 1442px) {
     #homeTitle{
-    font-size: 204px;
+    font-size: 156px;
 }
 
     .homeImg{
@@ -680,7 +691,7 @@ h3{
 
 @media (min-width: 1500px) {
     #homeTitle{
-    font-size: 204px;
+    font-size: 156px;
 }
 }
 
