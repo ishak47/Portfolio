@@ -338,6 +338,15 @@ a {
     transform: translateY(0px);
 }
 
+.projectLink{
+    color: #FF4A57;
+    text-decoration: underline #FF4A57 2px !important;
+}
+
+.projectLink:hover{
+    text-decoration: none !important;
+    color: #FF4A57;
+}
 /*Contact page*/
 #Contact{
     background-color: #212934;
