@@ -6,6 +6,11 @@ html {
     overflow-x: hidden;
 }
 
+.scrolled .favicon{
+    display: block !important;
+    background-color: deeppink;
+}
+
 /*Start header*/
 ul {
     list-style-type: none;
@@ -13,11 +18,8 @@ ul {
     padding: 0;
     overflow: hidden;
     display: flex;
-    align-items: center;
-    justify-content: right;
     width: 100%;
     background-color: transparent !important;
-    /*height: 50px;*/
     z-index: 99;
 }
 
@@ -43,7 +45,6 @@ li.navbar a {
 
 /*header*/
 ul {
-    /*padding: 10px;*/
     position: absolute;
     top: 0;
     margin-right: 5vh;
@@ -139,7 +140,8 @@ section {
 /*homePage introduction text*/
 .text {
     color: white;
-    font-size: 28px;
+    font-size: 23px;
+    margin-right: 21px;
 }
 
 /*text rechterkant met media linkjes*/
@@ -252,16 +254,15 @@ a {
 #Projects{
     background-color: #151D27;
     padding-top: 50px;
+    display: grid;
+    grid-template: auto/ minmax(0,1fr) minmax(0,1fr);
 }
 .projectsIMG{
     display: grid;
-    grid-template-columns: repeat(3, 300px);
+    grid-template-columns: repeat(3, 250px);
     place-content: center;
     margin-bottom: 25px;
-}
-
-.projectsTitle {
-    text-align: center;
+    grid-gap: 25px;
 }
 
 .imgWrap {
@@ -272,8 +273,13 @@ a {
     display: block;
 }
 
-.company,.program{
-    font-size: 29px;
+.company{
+    font-size: 23px;
+    font-weight: bold;
+}
+.program{
+    font-size: 18px;
+
 }
 
 .overlay {
@@ -338,7 +344,6 @@ a {
 }
 
 .contact-box{
-    max-width: 850px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
@@ -432,15 +437,15 @@ footer{
 
 h3{
     overflow: hidden;
-    font-size: 16px;
-    margin-top:18px ;
+    font-size: 16px !important;
+    margin-top:18px !important;
 }
 
 
 /*header & navbar*/
 @media (max-width: 900px) {
 
-    body#menuButtonopen {
+    body#menuButtonOpen {
         overflow-y: hidden;
     }
 
@@ -463,6 +468,7 @@ h3{
         z-index: 2;
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
+        transition: linear 0.8s;
     }
 
     /*start nav bar opening*/
@@ -477,20 +483,22 @@ h3{
         color: #f2f2f2;
         text-decoration: none;
         margin: 4vh 1.5vh 4vh 4vh;
-        font-size: 25px;
+        font-size: 40px;
         display: block;
         position: fixed;
         right: 0;
         top: 0;
         transition: all 1s ease-out;
         background-color: transparent;
-        /*z-index: 99;*/
+        z-index: 1;
+
     }
 
     #menuButtonOpen {
+        color: black;
         text-decoration: none;
         margin: 4vh 1.5vh 4vh 4vh;
-        font-size: 25px;
+        font-size: 40px;
         display: block;
         position: absolute;
         z-index: 99;
@@ -546,6 +554,7 @@ h3{
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        padding-left: 0 !important;
     }
 
     .navbar {
@@ -563,6 +572,12 @@ h3{
 
     .listItem {
         width: 96%;
+    }
+
+    ul.scrolled{
+        background-color: white !important;
+        transition: none !important;
+        box-shadow: none !important;
     }
 }
 
@@ -671,19 +686,122 @@ h3{
 
 
 /*projects page*/
-@media (max-width: 710px) {
+
+@media (max-width: 1350px){
+    #Projects{
+        grid-template-columns: auto;
+    }
     .projectsIMG{
-        grid-template-columns: repeat(1, 300px)!important;
+        grid-template-columns: repeat(3, 250px);
+    }
+
+    .projectsImage{
+        width: 250px;
+        height: 250px;
+    }
+
+    .projectsLeft{
+        height: auto !important;
+    }
+}
+@media (max-width: 1550px) {
+    .projectsIMG{
+        grid-template-columns: repeat(3,215px);
+    }
+
+    .projectsImage{
+        height: 215px;
+        width: 215px;
+    }
+
+    .btnProjects{
+        width: 70px!important;
+    }
+    .overlay:hover > .buttons {
+        transform: translateY(30px);
+    }
+
+}
+
+@media (max-width: 720px) {
+    #Projects{
+        grid-template-columns: auto;
+    }
+    .projectsIMG{
+        grid-template-columns: repeat(2, 250px) !important;
         margin-top: 20px;
     }
-}
+    .projectsImage{
+        height: 250px !important;
+        width: 250px !important;
+    }
 
-@media (max-width: 1100px){
-    .projectsIMG{
-        grid-template-columns: repeat(2, 300px);
+    .projectsLeft{
+        height: auto !important;
+        margin: 0 20px;
     }
 }
 
+@media (max-width: 780px){
+    .projectsImage{
+        width: 230px;
+        height: 230px;
+    }
+
+    .projectsIMG{
+        grid-template-columns: repeat(3,230px) ;
+    }
+
+    .btnProjects{
+        width: 70px !important;
+    }
+
+    .overlay:hover > .buttons {
+        transform: translateY(30px);
+    }
+
+    .company {
+        font-size: 23px !important;
+    }
+
+    .program{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 500px) {
+    .projectsIMG{
+        grid-template-columns: auto!important;
+        grid-row-gap: 50px
+    }
+
+    .projectsText{
+        font-size: 18px!important;
+        margin: 0 20px;
+    }
+    .projectsTitle{
+        margin: 0 20px;
+    }
+
+    .projectsImage{
+        width: 100%!important;
+        height: 100% !important;
+    }
+
+    .btnProjects{
+        width: 150px!important;
+    }
+    .company{
+        font-size: 38px !important;
+    }
+
+    .program{
+        font-size: 20px !important;
+    }
+    .overlay:hover > .buttons {
+        transform: translateY(80px);
+    }
+}
 /*contact page*/
 @media (max-width: 580px) {
 
@@ -790,6 +908,7 @@ h3{
         display: grid;
         grid-template: auto / minmax(0,1fr) !important;
         margin-top: 0 !important;
+        margin: 0 20px;
     }
 
     .centerText{

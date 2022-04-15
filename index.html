@@ -15,40 +15,59 @@
             border-radius: 13px;
             color: white;
             padding: 8px;
-            width: 130px;
+            width: 100px;
             margin-top: auto;
             font-family: 'Roboto', sans-serif;
             font-size: 16px;
         }
+
+        .btnProjects:hover{
+            color: black;
+        }
+
+        .projectsText{
+            color: white;
+            font-size: 25px;
+        }
+
+        #Projects{
+            place-items: center;
+        }
+
+        .projectsLeft{
+            height: 525px;
+        }
+
     </style>
 </head>
 <body>
 <!--header en navbar-->
 <div class="nav-links" id="navLinks">
-    <a href="javascript:void(0);" id="menuButtonOpen" class="menuButton" onclick="hideMenu()">&#10006;</a>
+    <a href="javascript:void(0);" id="menuButtonOpen" class="menuButton" onclick="hideMenu()">&#9886;</a>
     <header>
         <div id="menu">
             <nav class="nav">
-            <ul>
-                <li class="navbar">
-                    <a href="#Home" class="navItem">Home</a>
-                </li>
+                <ul>
+                    <li class="navbar">
+                        <a href="#Home" class="navItem">Home</a>
+                    </li>
 
-                <li class="navbar">
-                    <a href="#aboutMe" class="navItem">About me</a>
-                </li>
+                    <li class="navbar">
+                        <a href="#aboutMe" class="navItem">About me</a>
+                    </li>
 
-                <li class="navbar">
-                    <a href="#Skills" class="navItem">Skills</a></li>
+                    <li class="navbar">
+                        <a href="#Skills" class="navItem">Skills</a></li>
 
-                <li class="navbar">
-                    <a href="#Projects" class="navItem">Projects</a>
-                </li>
+                    <li class="navbar">
+                        <a href="#Projects" class="navItem">Projects</a>
+                    </li>
 
-                <li class="navbar">
-                    <a href="#Contact" class="navItem">Contact</a>
-                </li>
-            </ul>
+                    <li class="navbar">
+                        <a href="#Contact" class="navItem">Contact</a>
+                    </li>
+<!--                    <img class="favicon" src="IMG/Home/favicon-32x32.png">-->
+                </ul>
             </nav>
         </div>
     </header>
@@ -64,9 +83,8 @@
     <div class="wrapper">
         <h1 class="" id="homeTitle"> Ishak <br> Jmilou</h1>
         <img class="homeImg" src="IMG/Home/Ishak-3.png">
-        <!--        <div id="lineHome"></div>-->
         <div class="introductionText">
-            <p class="text">Ik ben een software<br>
+            <p class="text"> Software
                 developer in opleiding op<br>
                 het ROC van Flevoland
             </p>
@@ -83,7 +101,6 @@
             </div>
         </div>
     </div>
-
 </section>
 
 <!--section About me-->
@@ -91,13 +108,13 @@
     <div class="aboutWrapper">
         <div class="information">
             <div class="bornCity ">
-                <p class="bornText">Born in <br><span class="city">Amsterdam</span></p>
+                <p class="city"><span class="bornText">Born in </span> Amsterdam</p>
             </div>
             <div class="experience">
-                <p class="experienceColored">Experience <br><span class="years">1 + years</span></p>
+                <p class="years"><span class="experienceColored">Experience </span> 1 + years</p>
             </div>
             <div class="birthDate">
-                <p class="birthColoured">Date of birth <br><span class="Date">07 oktober 2004</span></p>
+                <p class="Date"><span class="birthColoured">Date of birth </span> 07 oktober 2004 </p>
             </div>
         </div>
         <div class="aboutCenter">
@@ -142,95 +159,101 @@
 
 <!--section Projects-->
 <section id="Projects">
-    <div id="projectsWrapper">
+    <div class="projectsLeft">
         <div class="title projectsTitle">Projects</div>
+        <p class="projectsText">                    Mijn naam is Ishak Jmilou. Ik studeer de opleiding<br> Software Developer aan het ROC van Flevoland.<br>
+            Ik ben 17 jaar en zit in mijn 2de leerjaar op het ROC.<br> Ik heb tot nu toe verschillende cursussen
+            op school<br>
+            gehad. Mijn hobby's zijn gamen , voetbal, Formule 1 en<br> alle andere soorten sporten die er zijn.</p>
+    </div>
+    <div id="projectsWrapper">
         <div class="projectsIMG">
             <div class="imgWrap">
-                <img src="IMG/Projects/bitAcademy.png" width="300" height="300" class="projectsImage">
+                <img src="IMG/Projects/bitAcademy.png" width="250" height="250" class="projectsImage">
                 <div class="overlay overlay-blur">
                     <div class="company overlayTitle">Bit-Academy</div>
-                    <div class="program overlayTitle">HTML/CSS/JS/PHP</div>
+                    <div class="program overlayTitle subTitle">HTML/CSS/JS/PHP</div>
                     <div class="buttons">
                         <a href="https://bit-workboard.000webhostapp.com/">
-                            <button class="btnProjects">LIVE</button>
+                            <button class=" btnProjects">LIVE</button>
                         </a>
                         <a href="https://github.com/ishak47/BitAcademy">
-                            <button class="btnProjects">REPO</button>
+                            <button class=" btnProjects">REPO</button>
                         </a>
                     </div>
                 </div>
             </div>
             <div class="imgWrap">
-                <img src="IMG/Projects/memoryGame.png" width="300" height="300" class="projectsImage">
+                <img src="IMG/Projects/memoryGame.png" width="250" height="250" class="projectsImage">
                 <div class="overlay overlay-blur">
                     <div class="company overlayTitle">Memory Game</div>
                     <div class="program overlayTitle">HTML/CSS/JS</div>
                     <div class="buttons">
                         <a href="https://memorygame-javascript.netlify.app/">
-                            <button class="btnProjects">LIVE</button>
+                            <button class=" btnProjects">LIVE</button>
                         </a>
                         <a href="https://github.com/ishak47/JavaScript/tree/master/MemoryGame">
-                            <button class="btnProjects">REPO</button>
+                            <button class=" btnProjects">REPO</button>
                         </a>
                     </div>
                 </div>
             </div>
             <div class="imgWrap">
-                <img src="IMG/Projects/clubChooser.png" width="300" height="300" class="projectsImage">
+                <img src="IMG/Projects/clubChooser.png" width="250" height="250" class="projectsImage">
                 <div class="overlay overlay-blur">
-                    <div class="company overlayTitle">clubChooser</div>
+                    <div class="company overlayTitle">ClubChooser</div>
                     <div class="program overlayTitle">HTML/CSS/JS</div>
                     <div class="buttons">
                         <a href="https://h5-javascript.netlify.app/">
-                            <button class="btnProjects">LIVE</button>
+                            <button class=" btnProjects">LIVE</button>
                         </a>
                         <a href="https://github.com/ishak47/JavaScript/tree/master/H05">
-                            <button class="btnProjects">REPO</button>
+                            <button class=" btnProjects">REPO</button>
                         </a>
                     </div>
                 </div>
             </div>
             <div class="imgWrap">
-                <img src="IMG/Projects/trueMuic.png" width="300" height="300" class="projectsImage">
+                <img src="IMG/Projects/trueMuic.png" width="250" height="250" class="projectsImage">
                 <div class="overlay overlay-blur">
                     <div class="company overlayTitle">True Music</div>
                     <div class="program overlayTitle">HTML/CSS</div>
                     <div class="buttons">
                         <a href="https://true-music-h07.netlify.app/">
-                            <button class="btnProjects">LIVE</button>
+                            <button class=" btnProjects">LIVE</button>
                         </a>
                         <a href="https://github.com/ishak47/html-css/tree/master/H07">
-                            <button class="btnProjects">REPO</button>
+                            <button class=" btnProjects">REPO</button>
                         </a>
                     </div>
                 </div>
             </div>
             <div class="imgWrap">
-                <img src="IMG/Projects/voetbalShuffle.png" width="300" height="300" class="projectsImage">
+                <img src="IMG/Projects/voetbalShuffle.png" width="250" height="250" class="projectsImage">
                 <div class="overlay overlay-blur">
                     <div class="company overlayTitle">VoetbalShuffle</div>
                     <div class="program overlayTitle">HTML/CSS/JS</div>
                     <div class="buttons">
                         <a href="https://voetbal-logo-ho5-js.netlify.app/">
-                            <button class="btnProjects">LIVE</button>
+                            <button class=" btnProjects">LIVE</button>
                         </a>
                         <a href="https://github.com/ishak47/JavaScript/tree/master/H03">
-                            <button class="btnProjects">REPO</button>
+                            <button class=" btnProjects">REPO</button>
                         </a>
                     </div>
                 </div>
             </div>
             <div class="imgWrap">
-                <img src="IMG/Projects/burtonEducation.png" width="300" height="300" class="projectsImage">
+                <img src="IMG/Projects/burtonEducation.png" width="250" height="250" class="projectsImage">
                 <div class="overlay overlay-blur">
                     <div class="company overlayTitle">Burton Education</div>
                     <div class="program overlayTitle">HTML/CSS</div>
                     <div class="buttons">
                         <a href="https://burton-education-h06.netlify.app/">
-                            <button class="btnProjects">LIVE</button>
+                            <button class=" btnProjects">LIVE</button>
                         </a>
                         <a href="https://github.com/ishak47/JavaScript/tree/master/H04/H04.3">
-                            <button class="btnProjects">REPO</button>
+                            <button class=" btnProjects">REPO</button>
                         </a>
                     </div>
                 </div>
@@ -299,17 +322,23 @@
         lis[i].addEventListener("click", hideMenu);
     }
 
-    window.addEventListener('scroll', function (){
+    window.addEventListener('scroll', function () {
         let header = document.querySelector('ul');
         let windowPosition = window.scrollY > 0;
-        header.classList.toggle('scrolled',windowPosition);
+        header.classList.toggle('scrolled', windowPosition);
     })
 
-    window.addEventListener('scroll', function (){
+    window.addEventListener('scroll', function () {
         let header = document.querySelector('.navItem');
         let windowPosition = window.scrollY > 0;
-        header.classList.toggle('scrolled',windowPosition);
+        header.classList.toggle('scrolled', windowPosition);
     })
+
+    // window.addEventListener('scroll', function () {
+    //     let image = document.querySelector('.favicon');
+    //     let windowPosition = window.scrollY > 0;
+    //     image.classList.toggle('scrolled', windowPosition);
+    // })
 </script>
 
 </body>
